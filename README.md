@@ -22,11 +22,18 @@ You can also use Android Studio for that purpose either:
 VSC -> Git -> Clone
 Insert URL https://github.com/Kiran0004/SearchNearBy.git and press Clone button. Android Studio will clone and build the project after you are good to run the App pressing Run button at the top with the default configuration.
 Project tech stack
-•	Kotlin
-•	Koin (dependency injection)
-•	Architecture components (Room, LiveData, ViewModel)
-•	Android DataBinding
-•	Gson
-•	Glide
-•	Unit testing
+
+1. Kotlin
+
+2. Koin (dependency injection)
+
+3. Architecture components (Room, LiveData, ViewModel)
+
+4. Android DataBinding
+
+5. Gson
+
+6. Glide
+
+7. Unit testing
 
