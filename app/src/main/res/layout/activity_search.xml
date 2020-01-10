@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".search.SearchActivity">
+
+    <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+        <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:theme="@style/AppTheme.AppBarOverlay"
+                android:layout_height="70dp"
+                android:background="@color/colorPrimary"
+                app:queryHint="@string/search_hint"
+                app:iconifiedByDefault="false"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:background="@color/colorWhite"
+                android:layout_marginTop="5dp"
+                android:layout_height="match_parent">
+
+            <ImageView
+                    android:id="@+id/ivSearchHolder"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_search_violet_24dp"
+                    android:layout_width="80dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvSearchContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+
+            <ProgressBar
+                    android:id="@+id/progressView"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/colorPrimary"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@drawable/ic_map_white_24dp"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

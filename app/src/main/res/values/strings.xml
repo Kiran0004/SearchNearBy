@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">NearByFood</string>
+    <string name="action_settings">Settings</string>
+    <string name="retry">Retry</string>
+    <string name="search_hint">Type for search</string>
+    <string name="switch_to_map">Switching to map view</string>
+    <string name="title_activity_map_view">Map</string>
+    <string name="title_activity_detail_acivity">DetailAcivity</string>
+    <string name="generic_price_text">Price range (1&#8211;4): %s (%s)</string>
+    <string name="generic_url_text">Check it out: %s</string>
+    <string name="generic_phone_text">Phone number: %s</string>
+    <string name="generic_status_text">Status: %s</string>
+    <string name="error_msg">Something went wrong</string>
+    <string name="no_content_msg">Try to search first</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="remove_fav">Add this place to your favorites</string>
+    <string name="add_to_fav">This place is added to your favorites !!!</string>
+</resources>
